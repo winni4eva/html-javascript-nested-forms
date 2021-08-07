@@ -13,9 +13,27 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div id="categories">
+
+            <div class="category-row">
+        
+                <div>
+                    <input class="cat-input" type="text" name="category[0][name]" autocomplete="off" placeholder="enter category here">
+                </div>
+        
+                <div class="category-options-row">
+                    <div class="option">
+                        <input class="option-input" type="text" name="category[0][options][0]" autocomplete="off" placeholder="enter option here">
+                    </div>
+                    <button class="optionBtn">Add Another Option Row</button>
+                </div>
+        
+            </div>
+        
+        </div>
+        <div class="col-sm-2" style="margin-top: 19px;">
+            <button id="addCatBtn">Add Another Category Row</button>
+        </div>
         
         <script src="app.js"/>
     </body>
